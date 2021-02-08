@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(this)
 
+        //뷰모델 옵저버
         wordViewModel.allWords.observe(this, Observer { words ->
             words?.let { adapter.submitList(it) }
         })
