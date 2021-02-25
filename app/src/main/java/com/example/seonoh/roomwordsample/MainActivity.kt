@@ -2,10 +2,10 @@ package com.example.seonoh.roomwordsample
 
 import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -54,9 +54,9 @@ class MainActivity : AppCompatActivity() {
             }
         } else {
             Toast.makeText(
-                applicationContext,
-                R.string.empty_not_saved,
-                Toast.LENGTH_LONG).show()
+                    applicationContext,
+                    R.string.empty_not_saved,
+                    Toast.LENGTH_LONG).show()
         }
     }
 }
